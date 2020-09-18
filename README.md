@@ -3,8 +3,10 @@ Compulsory Assignment
 
 # The Exercise
 Create two functions in a PrimeGenerator class:
-  List<long> GetPrimesSequential(long first, long last)
-  List<long> GetPrimesParallel(long first, long last)
+
+  * List<long> GetPrimesSequential(long first, long last)
+  * List<long> GetPrimesParallel(long first, long last)
+  
 to return a sorted list of all prime numbers in a given range, say between 1.000.000 and 2.000.000. (A number is a prime number if only 1 and the number itself can divide the number).
 
 1. First implement the function using a sequential approach, and check for correctness.
