@@ -8,14 +8,21 @@ namespace Compulsory1PrimeFinderConsoleApp
     {
         static void Main(string[] args)
         {
+            var rangeStart = 1;
+            var rangeEnd = 1;
             Console.WriteLine("Hello World!");
-            var stopWatch = Stopwatch.StartNew();
-            var primeNumbers = new ParallelPrimeFinder().GetPrimesBetween(1, 10_000_000);
+
+            var stopWatch = new Stopwatch();
+
+            stopWatch.Start();
+            new ParallelPrimeFinder().GetPrimesBetween(rangeStart, rangeEnd);
             stopWatch.Stop();
-            Console.WriteLine($"Time elapsed: {stopWatch.ElapsedMilliseconds}");
-            Console.WriteLine("Primes");
-            var primesString = string.Join(", ", primeNumbers);
-            //Console.WriteLine(primesString);
+            Console.Write($"Time elapsed for Parallel: {stopWatch.ElapsedMilliseconds}ms, ");
+
+            stopWatch.Start();
+            new SeqPrimeFinder().GetPrimesBetween(rangeStart, rangeEnd);
+            stopWatch.Stop();
+            Console.WriteLine($"Time elapsed for Sequential: {stopWatch.ElapsedMilliseconds}ms");
         }
     }
 }
