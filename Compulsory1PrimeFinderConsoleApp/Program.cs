@@ -1,5 +1,6 @@
 ﻿using System;
-using Compulsory1PrimeFinder;
+using System.Diagnostics;
+using Compulsory1PrimeFinderLogic;
 
 namespace Compulsory1PrimeFinderConsoleApp
 {
@@ -8,10 +9,13 @@ namespace Compulsory1PrimeFinderConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var primeNumbers = new SeqPrimeFinder().GetPrimesBetween(1, 10_000_000);
+            var stopWatch = Stopwatch.StartNew();
+            var primeNumbers = new ParallelPrimeFinder().GetPrimesBetween(1, 10_000_000);
+            stopWatch.Stop();
+            Console.WriteLine($"Time elapsed: {stopWatch.ElapsedMilliseconds}");
             Console.WriteLine("Primes");
             var primesString = string.Join(", ", primeNumbers);
-            Console.WriteLine(primesString);
+            //Console.WriteLine(primesString);
         }
     }
 }

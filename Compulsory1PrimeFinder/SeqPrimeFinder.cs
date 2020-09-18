@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Compulsory1PrimeFinder
+namespace Compulsory1PrimeFinderLogic
 {
     public class SeqPrimeFinder
     {
