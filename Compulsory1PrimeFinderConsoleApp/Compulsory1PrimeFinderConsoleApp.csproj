@@ -5,4 +5,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Compulsory1PrimeFinder\Compulsory1PrimeFinderLogic.csproj" />
+  </ItemGroup>
 </Project>
