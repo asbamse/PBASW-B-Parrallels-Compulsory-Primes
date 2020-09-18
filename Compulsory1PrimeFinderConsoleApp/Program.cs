@@ -9,7 +9,7 @@ namespace Compulsory1PrimeFinderConsoleApp
         static void Main(string[] args)
         {
             var rangeStart = 1;
-            var rangeEnd = 1;
+            var rangeEnd = 300_000;
             Console.WriteLine("Hello World!");
 
             var stopWatch = new Stopwatch();
@@ -18,6 +18,8 @@ namespace Compulsory1PrimeFinderConsoleApp
             new ParallelPrimeFinder().GetPrimesBetween(rangeStart, rangeEnd);
             stopWatch.Stop();
             Console.Write($"Time elapsed for Parallel: {stopWatch.ElapsedMilliseconds}ms, ");
+
+            stopWatch.Reset();
 
             stopWatch.Start();
             new SeqPrimeFinder().GetPrimesBetween(rangeStart, rangeEnd);
