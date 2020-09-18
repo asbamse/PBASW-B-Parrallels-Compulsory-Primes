@@ -8,21 +8,21 @@ namespace Compulsory1PrimeFinderConsoleApp
     {
         static void Main(string[] args)
         {
-            var rangeStart = 1;
-            var rangeEnd = 300_000;
+            var rangeStart = 1L;
+            var rangeEnd = 300_000L;
             Console.WriteLine("Hello World!");
 
             var stopWatch = new Stopwatch();
 
             stopWatch.Start();
-            new ParallelPrimeFinder().GetPrimesBetween(rangeStart, rangeEnd);
+            new PrimeGenerator().GetPrimesParallel(rangeStart, rangeEnd);
             stopWatch.Stop();
             Console.Write($"Time elapsed for Parallel: {stopWatch.ElapsedMilliseconds}ms, ");
 
             stopWatch.Reset();
 
             stopWatch.Start();
-            new SeqPrimeFinder().GetPrimesBetween(rangeStart, rangeEnd);
+            new PrimeGenerator().GetPrimesSequential(rangeStart, rangeEnd);
             stopWatch.Stop();
             Console.WriteLine($"Time elapsed for Sequential: {stopWatch.ElapsedMilliseconds}ms");
         }
