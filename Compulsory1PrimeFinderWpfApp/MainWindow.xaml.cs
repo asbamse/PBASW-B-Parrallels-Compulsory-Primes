@@ -21,7 +21,7 @@ namespace Compulsory1PrimeFinderWpfApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public ParallelPrimeFinder PrimeFinder { get; set; } = new ParallelPrimeFinder();
+        public PrimeGenerator PrimeFinder { get; set; } = new PrimeGenerator();
         public MainWindow()
         {
             InitializeComponent();
@@ -29,9 +29,9 @@ namespace Compulsory1PrimeFinderWpfApp
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            int start = int.Parse(TextBox_StartNumber.Text);
-            int end = int.Parse(TextBox_EndNumber.Text);
-            List<int> primes = await Task.Run(() => PrimeFinder.GetPrimesBetween(start, end));
+            long start = long.Parse(TextBox_StartNumber.Text);
+            long end = long.Parse(TextBox_EndNumber.Text);
+            List<long> primes = await Task.Run(() => PrimeFinder.GetPrimesParallel(start, end));
             PrimeList.ItemsSource = primes;
         }
     }
