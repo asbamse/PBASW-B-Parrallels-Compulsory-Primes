@@ -1,9 +1,12 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compulsory1PrimeFinderLogic", "Compulsory1PrimeFinder\Compulsory1PrimeFinderLogic.csproj", "{23CE0950-FEB1-49A7-86B4-BE8774276292}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compulsory1PrimeFinderLogic", "Compulsory1PrimeFinder\Compulsory1PrimeFinderLogic.csproj", "{23CE0950-FEB1-49A7-86B4-BE8774276292}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compulsory1PrimeFinderConsoleApp", "Compulsory1PrimeFinderConsoleApp\Compulsory1PrimeFinderConsoleApp.csproj", "{52F3284F-59FF-4689-845A-C0B1D3ACAEAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compulsory1PrimeFinderConsoleApp", "Compulsory1PrimeFinderConsoleApp\Compulsory1PrimeFinderConsoleApp.csproj", "{52F3284F-59FF-4689-845A-C0B1D3ACAEAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compulsory1PrimeFinderWpfApp", "Compulsory1PrimeFinderWpfApp\Compulsory1PrimeFinderWpfApp.csproj", "{AEAFA298-E790-4082-BA9F-EA15A5A843C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +22,15 @@ Global
 		{52F3284F-59FF-4689-845A-C0B1D3ACAEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52F3284F-59FF-4689-845A-C0B1D3ACAEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52F3284F-59FF-4689-845A-C0B1D3ACAEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEAFA298-E790-4082-BA9F-EA15A5A843C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEAFA298-E790-4082-BA9F-EA15A5A843C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEAFA298-E790-4082-BA9F-EA15A5A843C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEAFA298-E790-4082-BA9F-EA15A5A843C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06D60495-7266-49A6-B32F-A64D4FE945CA}
 	EndGlobalSection
 EndGlobal
